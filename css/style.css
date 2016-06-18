@@ -1,4 +1,7 @@
-nav ul {
+html, body {
+  font: Helvetica;
+  }
+  nav ul {
   list-style: none;
   text-transform: uppercase;
   padding: 5px;
@@ -7,5 +10,5 @@ a {
   text-decoration: none;
 }
 .home {
-  background-color: tan;
+  img src: "/assets/images/potato/1/bg.jpg";
 }
