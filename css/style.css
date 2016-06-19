@@ -1,14 +1,57 @@
-html, body {
-  font: Helvetica;
+body, h1, h2, p, ul, li, ol {
+  margin: 0;
+  padding: 0;
   }
-  nav ul {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font: Helvetica;
+  }
+  nav {
+  float: right;
   list-style: none;
   text-transform: uppercase;
-  padding: 5px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav li:last-child {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+
 }
 a {
   text-decoration: none;
 }
-.home {
-  img src: "/assets/images/potato/1/bg.jpg";
+#home {
+  background-color: tan;
+  height: 100vh;
+}
+#home header {
+  padding: 30px;
+  overflow: auto;
+}
+#home div {
+  padding-top: 200px;
+  text-align: center;
+}
+#home header p {
+  max-width: 50%;
+  float: left;
+}
+#shapes {
+  background: url(/assets/images/potato/2/blur.png);
+
+}
+#healthy {
+  background: url(/assets/images/potato/3/bg.jpg)
+}
+#transform {
+  background: url(/assets/images/potato/4/bg.jpg);
+}
+#satisfaction {
+  background: url(/assets/images/potato/2/bg.jpg);
 }
