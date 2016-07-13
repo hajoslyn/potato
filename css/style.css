@@ -9,11 +9,11 @@ body, #logo, h1, h2, p, ul, li, ol {
   body {
     scroll-behavior: smooth;
   }
-  h1, h2, p {
+  hgroup {
     display: flex;
     justify-content: center;
 }
-    h1 {
+  h1 {
     font-size: 3em;
   }
   h2 {
@@ -55,9 +55,9 @@ header {
   display: flex;
   justify-content: space-between;
   }
-  #home {
+
+#home {
   background-color: tan;
-  height: 100vh;
 }
 #home header {
   padding: 30px;
@@ -69,13 +69,17 @@ header {
 }
 #shapes {
   background: url(/assets/images/potato/2/blur.png);
+  background-size: cover;
 }
 #healthy {
   background: url(/assets/images/potato/3/bg.jpg);
+  background-size: cover;
 }
 #transform {
   background: url(/assets/images/potato/4/bg.jpg);
+  background-size: cover;
 }
 #satisfaction {
   background: url(/assets/images/potato/2/bg.jpg);
+  background-size: cover;
 }
