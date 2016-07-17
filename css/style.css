@@ -1,17 +1,18 @@
-body, #logo, h1, h2, p, ul, li, ol {
+* body, #logo, h1, h2, p, ul, li, ol {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: Helvetica;
+  font: Helvetica sans serif;
   }
-  * {
-    box-sizing: border-box;
-  }
-  body {
+body {
     scroll-behavior: smooth;
   }
-  hgroup {
+hgroup {
     display: flex;
     justify-content: center;
+}
+#logo, h1, h2, p {
+  color: black;
 }
   h1 {
     font-size: 3em;
@@ -22,7 +23,8 @@ body, #logo, h1, h2, p, ul, li, ol {
   p {
     font-size: 1.5em;
   }
-  #logo, h1, h2, nav li, p {
+/*style navigation*/
+  nav li {
     color: white;
   }
   nav {
@@ -47,7 +49,7 @@ a {
   font-weight: bold;
   font-size: 1.5em;
 }
-#home, #shapes, #healthy, #transform, #satisfaction {
+#home, #shapes, #healthy, #transform, #satisfactio, hgroup {
     height: 100vh;
     justify-content: center;
 }
