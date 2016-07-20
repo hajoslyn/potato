@@ -1,9 +1,10 @@
-* body, #logo, h1, h2, p, ul, li, ol {
+* html, body {
+  font: "Arial" sans serif;
   box-sizing: border-box;
   margin: 0;
+  border: 0;
   padding: 0;
-  font: "Helvetica";
-  }
+}
 body {
     scroll-behavior: smooth;
   }
@@ -11,18 +12,24 @@ hgroup {
     display: flex;
     justify-content: center;
 }
-#logo, h1, h2, p {
-  color: black;
+h1 {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  font-size: 3em;
 }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
+h2 {
+  flex-grow: 1;
+    display: block;
+    width: 100%;
     font-size: 2em;
-  }
-  p {
-    font-size: 1.5em;
-  }
+}
+blockquote {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
 /*style navigation*/
   nav li {
     color: white;
@@ -49,15 +56,13 @@ a {
   font-weight: bold;
   font-size: 1.5em;
 }
-#home, #shapes, #healthy, #transform, #satisfactio, hgroup {
+#home, #shapes, #healthy, #transform, #satisfaction, #order {
     height: 100vh;
-    justify-content: center;
 }
 header {
   display: flex;
   justify-content: space-between;
   }
-
 #home {
   background-color: tan;
 }
@@ -69,6 +74,10 @@ header {
   max-width: 50%;
   float: left;
 }
+#home h1, #home h2, #logo, nav li {
+  color: white;
+}
+
 #shapes {
   background: url(/assets/images/potato/2/blur.png);
   background-size: cover;
@@ -84,4 +93,21 @@ header {
 #satisfaction {
   background: url(/assets/images/potato/2/bg.jpg);
   background-size: cover;
+}
+#order {
+  background-color: Gainsboro;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+#lite, #team, #pro {
+  flex: 1;
+  align-items: center;
+  margin: auto;
+}
+#order li {
+  font-size: 1.25em;
 }
