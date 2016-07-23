@@ -1,5 +1,6 @@
-* html, body {
-  font: "Arial" sans serif;
+* html, body, hgroup, h1, h2, h3, ul, li, nav li, p, blockquote, footer {
+  font: Helvetica;
+  font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
   border: 0;
@@ -23,15 +24,20 @@ h2 {
     display: block;
     width: 100%;
     font-size: 2em;
+    font-weight: lighter;
 }
 blockquote {
-  font-size: 2em;
+  font-size: 1.25em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 /*style navigation*/
   nav li {
+    color: white;
+    font-size: .75em
+  }
+  nav a {
     color: white;
   }
   nav {
@@ -109,5 +115,14 @@ header {
   margin: auto;
 }
 #order li {
-  font-size: 1.25em;
+  font-size: .75em;
+}
+/*--HELPERS*/
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
 }
