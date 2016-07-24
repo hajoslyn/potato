@@ -8,33 +8,86 @@
 }
 body {
     scroll-behavior: smooth;
-  }
-hgroup {
-    display: flex;
-    justify-content: center;
-    margin: 0;
+}
+h1, h2 {
+  font-weight: lighter;
 }
 h1 {
-  flex-grow: 1;
-  display: center;
-  width: 100%;
-  font-size: 3em;
-  margin: auto;
+    font-size: 3em;
 }
 h2 {
-  flex-grow: 1;
-    display: center;
-    width: 100%;
-    font-size: 2em;
-    font-weight: lighter;
-    margin: auto;
+      font-size: 2em;
+      padding-top: 0.5em;
+}
+.mainitems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-top: 8em;
+  }
+.mainitems h1,
+           h2,
+           img {
+                margin: auto;
 }
 blockquote {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  display: block;
+  width: 50vw;
+  justify-content: space-around;
+}
+blockquote p:first-child {
+  opacity: 0.5;
+}
+blockquote p:last-child {
+  opacity: 0.5;
 }
 h3 {
   font-size: 1em;
 }
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+#stats li {
+        margin: auto:
+        font-size: 1.5em;
+        text-decoration: none;
+}
+
+#shapes img {
+          max-width: 60em;
+}
+#wrapper {
+  display: flex;
+  justify-content: space-around:
+  overflow: hidden;
+  margin: 0;
+  height: 30vh;
+}
+#wrapper img,
+          blockquote
+          footer {
+              display: inline-flex;
+              margin: auto;
+}
+#transwrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 45vh;
+}
+#transwrapper #halftater,
+              #slider,
+              #chips,
+              #mash,
+              #fried {
+                margin: auto;
+                max-width: 5em;
+                height: inherit;
+              }
 /*style navigation*/
   nav li {
     color: white;
@@ -86,9 +139,6 @@ header {
 #home h1, #home h2, #logo, nav li {
   color: white;
 }
-#home .figure  {
-  max-width: 40em;
-}
 #home img {
   max-width: 40em;
 }
@@ -124,13 +174,4 @@ header {
 }
 #order li {
   font-size: .75em;
-}
-/*--HELPERS*/
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
 }
