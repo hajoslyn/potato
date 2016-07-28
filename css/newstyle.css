@@ -1,15 +1,32 @@
-* html, body, hgroup, h1, h2, h3, ul, li, nav li, p, blockquote, small, footer {
-  font: Helvetica;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  border: 0;
-  padding: 0;
+* html,
+ body,
+h1,
+h2,
+h3,
+ul,
+li,
+nav li,
+p,
+blockquote,
+.mainitems,
+.container,
+.flexslider,
+small,
+footer
+#lite,
+#pro,
+#team {
+        font: Helvetica;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        border: 0;
+        padding: 0;
 }
 body {
     scroll-behavior: smooth;
 }
-h1, h2 {
+h1, h2, h3, blockquote, li {
   font-weight: lighter;
 }
 h1 {
@@ -92,7 +109,7 @@ header {
 }
 #shapes img
 #healthy img {
-          max-width: 50em;
+          max-width: 35em;
           padding-top: 25em;
 }
 /*style healthy page*/
@@ -113,9 +130,14 @@ header {
 }
   #stats li,
       #stats h2 {
-        margin: auto:
-        font-size: 1.5em;
-        list-style: none;
+                margin: auto:
+                font-size: 1.5em;
+                list-style: none;
+                padding-right: 4em;
+}
+#stats li:last-child,
+#stats h2:last-child {
+                      padding-right: 0;
 }
 /*style transform page*/
 
@@ -150,7 +172,7 @@ header {
 }
 .flexslider {
   display: flex;
-  justify-content: space-around:
+  justify-content: stretch:
   overflow: hidden;
   margin: 0;
   height: 30vh;
@@ -182,33 +204,47 @@ blockquote {
   background-size: cover;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 .container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   padding-top: 6em;
   margin: 0;
 }
-.button,
-#lite li,
-#team li,
-#pro li {
-          flex: column;
+#lite,
+#team
+#pro {
+          flex-direction: column;
           margin: auto;
 }
-ul #lite,
-  #team {
-        border-right: 1px, black;
-        padding-right: 5em;
+#lite img
+#pro img,
+#team img {
+          width: 15em;
+          margin: auto;
+}
+#lite,
+#pro {
+      border-right: 1px, black;
+      padding-right: 5em;
 }
 #order li {
-  font-size: 1.5em;
+          font-size: 1.25em;
+}
+.button {
+          font-size: 1em;
+          color: green;
+          border: 1px solid green;
+          border-radius: 20px;
+          margin-top: 1em;
+          padding: 10px;
+          width: 4em;
+}
+.button a {
+            color: green;
+            text-transform: uppercase;
 }
 footer nav li {
-  color: black;
+              color: black;
   }
-  .button {
-  font-size: 1em;
-  color: green;
-}
