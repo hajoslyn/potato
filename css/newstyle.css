@@ -18,76 +18,19 @@ h1 {
 h2 {
       font-size: 2em;
       padding-top: 0.5em;
+      text-align: center;
 }
 .mainitems {
     display: flex;
     flex-direction: column;
-    text-align: center;
     margin: 0;
-    padding-top: 8em;
+    padding-top: 5em;
   }
 .mainitems h1,
            h2,
            img {
                 margin: auto;
 }
-blockquote {
-  font-size: 1.5em;
-  display: block;
-  width: 50vw;
-  justify-content: space-around;
-}
-blockquote p:first-child {
-  opacity: 0.5;
-}
-blockquote p:last-child {
-  opacity: 0.5;
-}
-h3 {
-  font-size: 1em;
-}
-#stats {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-}
-#stats li {
-        margin: auto:
-        font-size: 1.5em;
-        text-decoration: none;
-}
-
-#shapes img {
-          max-width: 60em;
-}
-#wrapper {
-  display: flex;
-  justify-content: space-around:
-  overflow: hidden;
-  margin: 0;
-  height: 30vh;
-}
-#wrapper img,
-          blockquote
-          footer {
-              display: inline-flex;
-              margin: auto;
-}
-#transwrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding-top: 40em;
-  margin: 0;
-  height: 20vh;
-  width: 40vw;
-}
-#transwrapper #halftater,
-              #slider,
-              #chips {
-              flex: auto;
-              align-content: center;
-              }
 /*style navigation*/
   nav li {
     color: white;
@@ -142,37 +85,130 @@ header {
 #home img {
   max-width: 40em;
 }
+/*style shapes page*/
 #shapes {
   background: url(/assets/images/potato/2/blur.png);
   background-size: cover;
 }
+#shapes img
+#healthy img {
+          max-width: 50em;
+          padding-top: 25em;
+}
+/*style healthy page*/
+
 #healthy {
   background: url(/assets/images/potato/3/bg.jpg);
   background-size: cover;
 }
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+#healthy h1,
+        #healthy h2,
+        #healthy li {
+                    color: white;
+}
+  #stats li,
+      #stats h2 {
+        margin: auto:
+        font-size: 1.5em;
+        list-style: none;
+}
+/*style transform page*/
+
 #transform {
-  background: url(/assets/images/potato/4/bg.jpg);
+  background-color: tan;
   background-size: cover;
 }
+#transwrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  max-height: 15em;
+  padding-top: 1em;
+  margin: 0;
+}
+#transwrapper img {
+              margin: auto
+}
+#transwrapper #transtater {
+              margin-right: 0;
+}
+#transwrapper #divider {
+              margin: 0;
+}
+#transwrapper #halfchip {
+              margin-left: 0;
+}
+/*style satisfaction page*/
 #satisfaction {
   background: url(/assets/images/potato/2/bg.jpg);
   background-size: cover;
 }
+.flexslider {
+  display: flex;
+  justify-content: space-around:
+  overflow: hidden;
+  margin: 0;
+  height: 30vh;
+  padding-top: 6em;
+}
+.flexslider .slides,
+.flexslider footer {
+                display: inline-flex;
+                margin: auto;
+}
+blockquote {
+  font-size: 1.25em;
+  display: block;
+  text-align: center;
+}
+.slides blockquote:first-child {
+                                opacity: 0.25;
+}
+.slides blockquote:last-child {
+                              opacity: 0.25;
+}
+.slides footer {
+                font-size: .75em;
+}
+/*style order page*/
+
 #order {
   background-color: Gainsboro;
   background-size: cover;
 }
+h3 {
+  font-size: 2em;
+}
 .container {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 6em;
   margin: 0;
 }
-ul #lite, #team, #pro {
-                      flex: 1;
-                      align-items: center;
-                      margin: auto;
+.button,
+#lite li,
+#team li,
+#pro li {
+          flex: column;
+          margin: auto;
+}
+ul #lite,
+  #team {
+        border-right: 1px, black;
+        padding-right: 5em;
 }
 #order li {
   font-size: 1.5em;
+}
+footer nav li {
+  color: black;
+  }
+  .button {
+  font-size: 1em;
+  color: green;
 }
