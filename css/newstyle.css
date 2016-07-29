@@ -23,6 +23,12 @@ footer
         border: 0;
         padding: 0;
 }
+img {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 body {
     scroll-behavior: smooth;
 }
@@ -176,7 +182,7 @@ header {
   overflow: hidden;
   margin: 0;
   height: 30vh;
-  padding-top: 6em;
+  padding-top: 10em;
 }
 .flexslider .slides,
 .flexslider footer {
@@ -188,14 +194,23 @@ blockquote {
   display: block;
   text-align: center;
 }
-.slides blockquote:first-child {
-                                opacity: 0.25;
+#block1 {
+         opacity: 0.25;
 }
-.slides blockquote:last-child {
-                              opacity: 0.25;
+#block2 {
+          padding-left: 3em;
+          padding-right: 3em;
+}
+#block3 {
+          opacity: 0.25;
 }
 .slides footer {
                 font-size: .75em;
+}
+#block2 footer:before {
+                      border-right: 1px solid black;
+                      border-bottom: 1px solid black;
+                      content: '';
 }
 /*style order page*/
 
@@ -208,26 +223,30 @@ h3 {
 }
 .container {
   display: flex;
-  justify-content: center;
-  padding-top: 6em;
+  padding: 6em;
+  width: 90em;
+  height: 16em;
   margin: 0;
 }
 #lite,
-#team
-#pro {
-          flex-direction: column;
-          margin: auto;
-}
-#lite img
-#pro img,
-#team img {
-          width: 15em;
+#team,
+#pro, {
+          flex: 1 0 auto;
+          width: 28em;
           margin: auto;
 }
 #lite,
 #pro {
       border-right: 1px, black;
       padding-right: 5em;
+}
+#order h3,
+#lite li,
+#pro li,
+#team li {
+          flex: 1 0 auto;
+          width: 25em;
+          margin: auto;
 }
 #order li {
           font-size: 1.25em;
